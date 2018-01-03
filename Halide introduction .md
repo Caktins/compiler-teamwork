@@ -1,8 +1,8 @@
 ​		
 
-##Halide: 
+## Halide: 
 
-##A Language and Compiler for Optimizing Parallelism,Locality, and Recomputation in Image Processing Pipelines
+## A Language and Compiler for Optimizing Parallelism,Locality, and Recomputation in Image Processing Pipelines
 
 
 
