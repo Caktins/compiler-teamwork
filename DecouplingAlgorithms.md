@@ -38,6 +38,7 @@
 * Sequential and parallel for loops, which define a range of variable values over which a statement should be executed;
 * Producer-consumer edges, which define an array to be allocated (its size given by a potentially dynamic expression), a　block of statements which may write to it, and a block of statements which may read from it, after which it may be freed.
 
+&emsp;&emsp;
 </br>
 ### The Language
 &emsp;&emsp;使用嵌入在C++中的原型语言(`Halide`)构建成像管道。 `Halide`函数链可以被立即编译和使用，也可以编译成一个目标文件和头文件，供其他程序使用，且无需与之进行链接。
