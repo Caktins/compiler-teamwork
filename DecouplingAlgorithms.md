@@ -44,6 +44,7 @@
 &emsp;&emsp;使用嵌入在C++中的原型语言(`Halide`)构建成像管道。 `Halide`函数链可以被立即编译和使用，也可以编译成一个目标文件和头文件，供其他程序使用，且无需与之进行链接。
 具体的使用与形式详见paper的section 4，包含表达式、方程、语法和指定`schedule`等。
 
+&emsp;&emsp;
 </br>
 ### Compiler Implementation
 &emsp;&emsp;The Halide compiler lowers imaging pipelines into machine code for ARM, x86, and PTX. It uses the LLVM compiler infrastructure for conventional scalar optimizations, register allocation, and ma chine code generation [LLVM]. While LLVM provides some de gree of platform neutrality, the final stages of lowering must be architecture-specific to produce high-performance machine code. 编译过程如下图所示：
