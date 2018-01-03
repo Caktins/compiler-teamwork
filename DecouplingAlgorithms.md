@@ -45,7 +45,7 @@
 
 </br>
 ### Compiler Implementation
-The Halide compiler lowers imaging pipelines into machine code for ARM, x86, and PTX. It uses the LLVM compiler infrastructure for conventional scalar optimizations, register allocation, and ma chine code generation [LLVM]. While LLVM provides some de gree of platform neutrality, the final stages of lowering must be architecture-specific to produce high-performance machine code. 编译过程如下图所示：
+&emsp;&emsp;The Halide compiler lowers imaging pipelines into machine code for ARM, x86, and PTX. It uses the LLVM compiler infrastructure for conventional scalar optimizations, register allocation, and ma chine code generation [LLVM]. While LLVM provides some de gree of platform neutrality, the final stages of lowering must be architecture-specific to produce high-performance machine code. 编译过程如下图所示：
 ![](https://github.com/Caktins/OnlinePhotos/blob/master/180103_2.png?raw=true)
 
 
