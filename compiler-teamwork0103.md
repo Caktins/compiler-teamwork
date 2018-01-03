@@ -27,9 +27,9 @@ The main idea is to partition the functions in a large Halide program into group
 Cause A good Schedule can have good:
 
 1. Producer-Consumer Locality;
-![](./repo/1.png)
+![](https://github.com/Caktins/compiler-teamwork/blob/master/repo/1.png?raw=true)
 2. Input Reuse;
-![](./repo/2.png)
+![](https://github.com/Caktins/compiler-teamwork/blob/master/repo/2.png?raw=true)
 
 Those can be true through `Function Bounds Analysis`.
 
