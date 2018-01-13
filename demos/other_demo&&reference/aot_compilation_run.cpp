@@ -1,13 +1,4 @@
-// Halide tutorial lesson 10: AOT compilation part 2
 
-// Before reading this file, see lesson_10_aot_compilation_generate.cpp
-
-// This is the code that actually uses the Halide pipeline we've
-// compiled. It does not depend on libHalide, so we won't be including
-// Halide.h.
-//
-// Instead, it depends on the header file that lesson_10_generate
-// produced when we ran it:
 #include "lesson_10_halide.h"
 
 // We want to continue to use our Halide::Buffer with AOT-compiled

@@ -1,18 +1,4 @@
-// Halide tutorial lesson 7: Multi-stage pipelines
 
-// On linux, you can compile and run it like so:
-// g++ lesson_07*.cpp -g -std=c++11 -I ../include -I ../tools -L ../bin -lHalide `libpng-config --cflags --ldflags` -ljpeg -lpthread -ldl -o lesson_07
-// LD_LIBRARY_PATH=../bin ./lesson_07
-
-// On os x:
-// g++ lesson_07*.cpp -g -std=c++11 -I ../include -I ../tools -L ../bin -lHalide `libpng-config --cflags --ldflags` -ljpeg -o lesson_07
-// DYLD_LIBRARY_PATH=../bin ./lesson_07
-
-// If you have the entire Halide source tree, you can also build it by
-// running:
-//    make tutorial_lesson_07_multi_stage_pipelines
-// in a shell with the current directory at the top of the halide
-// source tree.
 
 #include "Halide.h"
 #include <stdio.h>

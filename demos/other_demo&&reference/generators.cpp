@@ -1,22 +1,3 @@
-// Halide tutorial lesson 15: Generators part 1
-
-// This lesson demonstrates how to encapsulate Halide pipelines into
-// resuable components called generators.
-
-// On linux, you can compile and run it like so:
-// g++ lesson_15*.cpp ../tools/GenGen.cpp -g -std=c++11 -fno-rtti -I ../include -L ../bin -lHalide -lpthread -ldl -o lesson_15_generate
-// bash lesson_15_generators_usage.sh
-
-// On os x:
-// g++ lesson_15*.cpp ../tools/GenGen.cpp -g -std=c++11 -fno-rtti -I ../include -L ../bin -lHalide -o lesson_15_generate
-// bash lesson_15_generators_usage.sh
-
-// If you have the entire Halide source tree, you can also build it by
-// running:
-//    make tutorial_lesson_15_generators
-// in a shell with the current directory at the top of the halide
-// source tree.
-
 #include "Halide.h"
 #include <stdio.h>
 

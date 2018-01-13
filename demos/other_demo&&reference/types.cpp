@@ -1,20 +1,4 @@
-// Halide tutorial lesson 14: The Halide type system
 
-// This lesson more precisely describes Halide's type system.
-
-// On linux, you can compile and run it like so:
-// g++ lesson_14*.cpp -g -I ../include -L ../bin -lHalide -lpthread -ldl -o lesson_14 -std=c++11
-// LD_LIBRARY_PATH=../bin ./lesson_14
-
-// On os x:
-// g++ lesson_14*.cpp -g -I ../include -L ../bin -lHalide -o lesson_14 -std=c++11
-// DYLD_LIBRARY_PATH=../bin ./lesson_14
-
-// If you have the entire Halide source tree, you can also build it by
-// running:
-//    make tutorial_lesson_14_types
-// in a shell with the current directory at the top of the halide
-// source tree.
 
 #include "Halide.h"
 #include <stdio.h>

@@ -1,23 +1,4 @@
-// Halide tutorial lesson 2: Processing images
 
-// This lesson demonstrates how to pass in input images and manipulate
-// them.
-
-// On linux, you can compile and run it like so:
-// g++ lesson_02*.cpp -g -I ../include -I ../tools -L ../bin -lHalide `libpng-config --cflags --ldflags` -ljpeg -lpthread -ldl -o lesson_02 -std=c++11
-// LD_LIBRARY_PATH=../bin ./lesson_02
-
-// On os x:
-// g++ lesson_02*.cpp -g -I ../include -I ../tools -L ../bin -lHalide `libpng-config --cflags --ldflags` -ljpeg -o lesson_02 -std=c++11
-// DYLD_LIBRARY_PATH=../bin ./lesson_02
-
-// If you have the entire Halide source tree, you can also build it by
-// running:
-//    make tutorial_lesson_02_input_image
-// in a shell with the current directory at the top of the halide
-// source tree.
-
-// The only Halide header file you need is Halide.h. It includes all of Halide.
 #include "Halide.h"
 
 // Include some support code for loading pngs.
