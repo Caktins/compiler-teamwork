@@ -8,14 +8,7 @@ using namespace Halide;
 
 int main(int argc, char **argv) {
 
-    // We'll start by defining the simple single-stage imaging
-    // pipeline from lesson 1.
 
-    // This lesson will be about debugging, but unfortunately in C++,
-    // objects don't know their own names, which makes it hard for us
-    // to understand the generated code. To get around this, you can
-    // pass a string to the Func and Var constructors to give them a
-    // name for debugging purposes.
     Func gradient("gradient");
     Var x("x"), y("y");
     gradient(x, y) = x + y;

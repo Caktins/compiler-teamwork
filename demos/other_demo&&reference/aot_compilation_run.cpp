@@ -1,18 +1,13 @@
 
-#include "lesson_10_halide.h"
+#include "Halide.h"
 
-// We want to continue to use our Halide::Buffer with AOT-compiled
-// code, so we explicitly include it. It's a header-only class, and
-// doesn't require libHalide.
+
 #include "HalideBuffer.h"
 
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-    // Have a look in the header file above (it won't exist until you've run
-    // lesson_10_generate). At the bottom is the signature of the function we generated:
 
-    // int brighter(halide_buffer_t *_input_buffer, uint8_t _offset, halide_buffer_t *_brighter_buffer);
 
     // The ImageParam inputs have become pointers to "halide_buffer_t"
     // structs. This is struct that Halide uses to represent arrays of
@@ -45,8 +40,7 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    // Now let's check the filter performed as advertised. It was
-    // supposed to add the offset to every input pixel.
+    // check the filter performed as advertised. 
     for (int y = 0; y < 480; y++) {
         for (int x = 0; x < 640; x++) {
             uint8_t input_val = input(x, y);

@@ -3,17 +3,16 @@
 #include "Halide.h"
 #include <stdio.h>
 
-// We're going to be using x86 SSE intrinsics later on in this lesson.
+
 #ifdef __SSE2__
 #include <emmintrin.h>
 #endif
 
-// We'll also need a clock to do performance testing at the end.
 #include "clock.h"
 
 using namespace Halide;
 
-// Support code for loading pngs.
+
 #include "halide_image_io.h"
 using namespace Halide::Tools;
 

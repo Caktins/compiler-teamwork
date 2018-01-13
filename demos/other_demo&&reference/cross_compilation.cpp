@@ -5,7 +5,6 @@ using namespace Halide;
 
 int main(int argc, char **argv) {
 
-    // We'll define the simple one-stage pipeline that we used in lesson 10.
     Func brighter;
     Var x, y;
 
@@ -22,11 +21,7 @@ int main(int argc, char **argv) {
     // Schedule it.
     brighter.vectorize(x, 16).parallel(y);
 
-    // The following line is what we did in lesson 10. It compiles an
-    // object file suitable for the system that you're running this
-    // program on.  For example, if you compile and run this file on
-    // 64-bit linux on an x86 cpu with sse4.1, then the generated code
-    // will be suitable for 64-bit linux on x86 with sse4.1.
+
     brighter.compile_to_file("lesson_11_host", args, "brighter");
 
     // We can also compile object files suitable for other cpus and
@@ -123,14 +118,7 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    // It looks like the object files we produced are plausible for
-    // those targets. We'll count that as a success for the purposes
-    // of this tutorial. For a real application you'd then need to
-    // figure out how to integrate Halide into your cross-compilation
-    // toolchain. There are several small examples of this in the
-    // Halide repository under the apps folder. See HelloAndroid and
-    // HelloiOS here:
-    // https://github.com/halide/Halide/tree/master/apps/
+
     printf("Success!\n");
     return 0;
 }

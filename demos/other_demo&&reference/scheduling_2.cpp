@@ -670,34 +670,7 @@ int main(int argc, char **argv) {
 
     }
 
-    // This stuff is hard. We ended up in a three-way trade-off
-    // between memory bandwidth, redundant work, and
-    // parallelism. Halide can't make the correct choice for you
-    // automatically (sorry). Instead it tries to make it easier for
-    // you to explore various options, without messing up your
-    // program. In fact, Halide promises that scheduling calls like
-    // compute_root won't change the meaning of your algorithm -- you
-    // should get the same bits back no matter how you schedule
-    // things.
 
-    // So be empirical! Experiment with various schedules and keep a
-    // log of performance. Form hypotheses and then try to prove
-    // yourself wrong. Don't assume that you just need to vectorize
-    // your code by a factor of four and run it on eight cores and
-    // you'll get 32x faster. This almost never works. Modern systems
-    // are complex enough that you can't predict performance reliably
-    // without running your code.
-
-    // We suggest you start by scheduling all of your non-trivial
-    // stages compute_root, and then work from the end of the pipeline
-    // upwards, inlining, parallelizing, and vectorizing each stage in
-    // turn until you reach the top.
-
-    // Halide is not just about vectorizing and parallelizing your
-    // code. That's not enough to get you very far. Halide is about
-    // giving you tools that help you quickly explore different
-    // trade-offs between locality, redundant work, and parallelism,
-    // without messing up the actual result you're trying to compute.
 
     printf("Success!\n");
     return 0;
